@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+       function function1() {
+            var ul = document.getElementById("list");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode("My IP"));
+            var close = document.createElement("button");
+            close.appendChild(document.createTextNode("X"));
+            ul.appendChild(li).appendChild(close);
+        }
+</script>
+    Whitelisted IP Addresses
+    <ul id="list">
+    </ul>
+    <br>
+    <br>
+    
+        Secret Key: <input type="text" name="secret key" placeholder="6 digit alphanumeric"><br>
+        <button onclick="function1()" id="secret-submit"> Shhhhhh</button>
+        
+</body>
+</html>
